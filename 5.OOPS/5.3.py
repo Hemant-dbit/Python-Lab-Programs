@@ -41,24 +41,26 @@ class GermanShepherd(Dog):
         print(f"{self.name} is a {self.color} {self.breed}.")
 
 
-# Getting input for single inheritance example
-print("Enter details for Employee (Single Inheritance):")
-emp_name = input("Enter name: ")
-emp_age = int(input("Enter age: "))
-emp_id = input("Enter employee ID: ")
+if __name__ == "__main__":
 
-emp = Employee(emp_name, emp_age, emp_id)
-print("\nSingle Inheritance Output:")
-print(emp)
+    # Getting input for single inheritance example
+    print("Enter details for Employee (Single Inheritance):")
+    emp_name = input("Enter name: ")
+    emp_age = int(input("Enter age: "))
+    emp_id = input("Enter employee ID: ")
+
+    emp = Employee(emp_name, emp_age, emp_id)
+    print("\nSingle Inheritance Output:")
+    print(emp)
 
 
-# Getting input for multilevel inheritance example
-print("\nEnter details for German Shepherd (Multilevel Inheritance):")
-dog_name = input("Enter name: ")
-dog_breed = input("Enter breed: ")
-dog_color = input("Enter color: ")
+    # Getting input for multilevel inheritance example
+    print("\nEnter details for German Shepherd (Multilevel Inheritance):")
+    dog_name = input("Enter name: ")
+    dog_breed = input("Enter breed: ")
+    dog_color = input("Enter color: ")
 
-gs = GermanShepherd(dog_name, dog_breed, dog_color)
-print("\nMultilevel Inheritance Output:")
-gs.display()
-gs.speak()
+    gs = GermanShepherd(dog_name, dog_breed, dog_color)
+    print("\nMultilevel Inheritance Output:")
+    gs.display()
+    gs.speak()
